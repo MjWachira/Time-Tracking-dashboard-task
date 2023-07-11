@@ -1,0 +1,62 @@
+body{
+    background-color:rgb(9, 3, 70) ;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: 
+    "a b c d"
+    "a e f g";
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 800px;
+    height: 400px;
+    gap: 10px;
+}
+
+.main div{
+    border: solid;
+    background-color: rgb(36, 36, 114);
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+.report{
+    grid-area: a;
+    padding: 10px;
+}
+.report img{
+    width: 50px;
+    border: solid;
+    border-radius: 27px;
+    margin: 20px;
+}
+.duration{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 5px;
+}
+
+.work{
+    grid-area: b;
+}
+.play{
+    grid-area: c;
+}
+.study{
+    grid-area: d;
+}
+.excercise{
+    grid-area: e;
+}
+.social{
+    grid-area: f;
+}
+.self{
+    grid-area: g;
+}
